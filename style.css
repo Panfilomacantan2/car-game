@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game-container {
+  width: 300px;
+  height: 500px;
+  /* background: steelblue; */
+  position: relative;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.enemy {
+  width: 100px;
+  height: 100px;
+  background: red;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: url(./car1.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  left: 0;
+}
+
+.car {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url(./car4.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h2 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
